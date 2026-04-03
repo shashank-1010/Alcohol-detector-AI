@@ -1,0 +1,48 @@
+{
+  "examples": [
+    {
+      "scenario": "Person detected — result: Drunk",
+      "response": {
+        "success": true,
+        "result": "Drunk",
+        "status": "drunk",
+        "confidence": 78.3,
+        "face_detected": true,
+        "message": "Detection complete"
+      }
+    },
+    {
+      "scenario": "Person detected — result: Not Drunk",
+      "response": {
+        "success": true,
+        "result": "Not Drunk",
+        "status": "sober",
+        "confidence": 91.2,
+        "face_detected": true,
+        "message": "Detection complete"
+      }
+    },
+    {
+      "scenario": "No face in frame",
+      "response": {
+        "success": true,
+        "result": "No Face Detected",
+        "status": "unknown",
+        "confidence": 0.0,
+        "face_detected": false,
+        "message": "Detection complete"
+      }
+    },
+    {
+      "scenario": "No image sent",
+      "response": {
+        "success": false,
+        "result": "Error",
+        "status": "error",
+        "message": "No image data provided",
+        "confidence": 0.0,
+        "face_detected": false
+      }
+    }
+  ]
+}
